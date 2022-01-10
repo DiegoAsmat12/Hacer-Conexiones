@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacer Conexiones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <h1 class="nav-header">Profile</h1>
+            <div class="nav-links">
+                <ul class="links-list">
+                    <li class="link-item"><a href="#">Home</a></li>
+                    <li class="link-item active"><a href="#">My Profile</a></li>
+                    <li class="link-item"><a href="#">Find Connections</a></li>
+                </ul>
+                <button class="button-sign">Sign Out</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="user-profile">
+            <div class="card user">
+                <div class="card-header">
+                    <img src="./images/jane-m.jpg" alt="jane photo" class="user-image">
+                </div>
+                <div class="card-body">
+                    <h2 class="username" id="profile-user">Jane Doe</h2>
+                    <div class="location">
+                        <img src="./icons/map-marker.png" alt="map-marker" class="map-marker-icon">
+                        <span class="city">Seattle</span>
+                    </div>
+                    <div class="skill-info">
+                        <p>Developer | Engineer | Problem Solver</p>
+                        <p>Master of shadows and the Internet!</p>
+                    </div>
+                    <div class="user-edit" id="edit-profile">
+                        <img src="./icons/gear.png" alt="gear-icon" class="gear-icon">
+                        <span class="user-edit-text"><a href="#">edit profile</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card education">
+                <div class="card-header">
+                    <h2>Education</h2>
+                </div>
+                <div class="card-body">
+                    <h3>Coding Dojo - Full Stack Bootcamp</h3>
+                    <p class="date">Dec 2019 - Mar 2020</p>
+                    <p class="info">Triple black belt in Python, MERN, and C#</p>
+                </div>
+            </div>
+        </div>
+        <aside id="connections">
+            <div class="card connection-request">
+                <div class="card-header">
+                    <h3><span class="decorated" id="connection-request-counter">2</span> Connection Request</h3>
+                </div>
+                <div class="card-body">
+                    <div class="user-container">
+                        <div class="user-info">
+                            <img src="./images/todd-s.jpg" alt="todd photo" class="user-image">
+                            <span>Todd E</span>
+                        </div>
+                        <div class="user-actions">
+                            <img src="./icons/accept-circle.png" alt="aceptar solicitud icon" class="action-icon accept-btn">
+                            <img src="./icons/close-circle.png" alt="denegar solicitud icon" class="action-icon remove-btn">
+                        </div>
+                    </div>
+                    <div class="user-container">
+                        <div class="user-info">
+                            <img src="./images/phil-s.jpg" alt="phil photo" class="user-image">
+                            <span>Phil K</span>
+                        </div>  
+                        <div class="user-actions">
+                            <img src="./icons/accept-circle.png" alt="aceptar solicitud icon" class="action-icon accept-btn">
+                            <img src="./icons/close-circle.png" alt="denegar solicitud icon" class="action-icon remove-btn">
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <div class="card user-connections">
+                <div class="card-header">
+                    <h3><span class="decorated" id="connections-counter">418</span> Your Connections</h3>
+                </div>
+                <div class="card-body">
+                    <div class="user-info">
+                        <img src="./images/adrien-s.jpg" alt="adrien photo" class="user-image">
+                        <span>Adrien D</span>
+                    </div>  
+                    <div class="user-info">
+                        <img src="./images/anne-s.jpg" alt="anne photo" class="user-image">
+                        <span>Anne J</span>
+                    </div>  
+                    <div class="user-info">
+                        <img src="./images/alayne-s.jpg" alt="alayne photo" class="user-image">
+                        <span>Alayne T</span>
+                    </div>  
+                    <div class="user-info">
+                        <img src="./images/arry-s.jpg" alt="arry photo" class="user-image">
+                        <span>Arry Y</span>
+                    </div>  
+                </div>
+                <div class="card-footer">
+                    <a href="#">View More</a>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <script src="./js/javascript.js"></script>
+</body>
+</html>
